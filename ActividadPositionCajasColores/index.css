@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: black;
+}
+
+
+
+/*Bases*/
+.base{
+    box-sizing: border-box;
+    background-color: white;
+    border:4px solid rosybrown;
+    padding:4px;
+    margin-top:40px;
+    margin-left: 10px;
+    height: 85%;
+    width: 45%;
+}
+.cabezera{
+    position: relative;
+    margin: 6px;
+    height: 28%;
+    background-color: burlywood;
+}
+.centro{
+    margin:6px;
+    background-color: cadetblue;
+    height: 38%;
+}
+.pie{
+    margin:6px;
+    height: 30%;
+    background-color:coral ;
+}
+
+
+
+/*Contenedores mas profundos*/
+.cab_izquierda{
+    position: absolute;
+    left: 0px;
+    display: inline-block;
+    height: 100%;
+    width: 49%;
+    border: 1px solid black;
+}
+.cab_derecha{
+    position: absolute;
+    right: 0px;
+    display: inline-block;
+    z-index: 1;
+    height: 100%;
+    width: 49%;
+    border: 1px solid black;
+}
+
+
+
+
+
+
+
+/*Mensaje*/
+.mensaje{
+    position: absolute;
+    right: 50px;
+}
+h1{
+    color:white
+}
