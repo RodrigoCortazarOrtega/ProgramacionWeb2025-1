@@ -57,10 +57,10 @@ body{
     display: inline-block;
     height: 100%;
     width: 49%;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
 }
 .cab_izquierda_hijo{
-    border:2px solid white;
+    /*border:2px solid white;*/
     background-color: cadetblue;
     margin-top:5%;
     margin-left:5% ;
@@ -68,7 +68,7 @@ body{
     height: 80%;
 }
 .cab_derecha{
-    border:2px solid white;
+    /*border:2px solid white;*/
     position: absolute;
     right: 0px;
     display: inline-block;
@@ -79,7 +79,7 @@ body{
 }
 .cab_derecha_hijo{
     display: inline-block;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     height: 35%;
     width: 80%;
     text-align: center;
@@ -95,7 +95,7 @@ body{
 
 
 .centro_izquierdo{
-    border:2px solid white;
+    /*border:2px solid white;*/
     display: inline-block;
     background-color: coral;
     height: 94%;
@@ -106,7 +106,7 @@ body{
 .centro_derecho{
     display: inline-block;
     position: relative;
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     height: 94%;
     width: 58%;
 }
@@ -115,7 +115,7 @@ body{
     background-color: darkkhaki;
     height: 45%;
     width: 98%;
-    border:1px solid white;
+    /*border:1px solid white;*/
 }
 .cen_derecho_hijo2{
     
@@ -124,21 +124,24 @@ body{
     background-color: darkkhaki;
     height: 45%;
     width: 98%;
-    border:1px solid white;
+    /*border:1px solid white;*/
 }
 .pie_izquierda{
+    position: relative;
     display:inline-block;
     height: 90%;
     width: 47%;
-    border:2px solid white;
-    padding-top: 10%;
+    /*border:2px solid white;*/
+    padding-top: 6%;
     padding-bottom: 5%;
     margin-right: 1.4%;
 }
 .pie_izquierda_h{
-    display: block;
+    position: absolute;
+    
+    right: 0px;
     background-color: cadetblue;
-    height: 70%;
+    height: 55%;
     width: 60%;
 }
 
@@ -146,11 +149,11 @@ body{
     display: inline-block;
     height: 90%;
     width: 47%;
-    border:2px solid white;
-    padding-top:5%;
+    /*border:2px solid white;*/
+    padding-top:6%;
 }
 .pie_derecha_h{
-    border: 2px solid white;
+    /*border: 2px solid white;*/
     height: 70%;
     width: 60%;
 }
