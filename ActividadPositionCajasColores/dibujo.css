@@ -1,0 +1,51 @@
+/*Subir Imagen de codigo y dibujo en foto y archivo compreso*/
+*{
+    margin:0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.cuerpo{
+    box-sizing: border-box;
+    width: 610px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.superior{
+    width: 100%;
+}
+.inferior{
+    display: flex;
+    justify-content: center;
+    width:100%
+}
+
+.a{
+    height: 500px;
+    width: 48%;
+    border:2px solid black;
+    background:linear-gradient(to bottom right,transparent 30%,#F6A6A8);
+    display: inline-block;
+    border-radius: 10px;
+}
+.b{
+    display: inline-block;
+    height: 500px;
+    width: 48%;
+    border:2px solid black;
+    background:linear-gradient(to bottom left,transparent 30%,#F6A6A8);
+}
+.c{
+    width: 96%;
+    height: 200px;
+    background-color: #D3DD29;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
+    border-top:4px solid black;
+}
