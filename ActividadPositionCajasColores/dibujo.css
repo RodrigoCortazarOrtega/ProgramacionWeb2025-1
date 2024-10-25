@@ -9,11 +9,19 @@ html,body{
 }
 body{
     background-color: black;
-    /*
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;*/
+    flex-direction: column;
+
+ /*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=382626&c2=010101&gt=r&gd=dcc
+*/
+background: #382626;
+background: radial-gradient(at center, #382626, #010101);
+
 }
 h1{
     font-size: 3rem;
