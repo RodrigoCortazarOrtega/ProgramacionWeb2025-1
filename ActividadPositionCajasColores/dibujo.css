@@ -34,7 +34,7 @@ span{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 10px solid white;
+    /*border: 10px solid white;*/
     
 }
 .cabeza{
@@ -74,8 +74,8 @@ span{
     border-top-left-radius: 100% ;
     height: 98%;
     width: 48%;
-    border-left:2px solid #D85F44;
-    border-top:2px solid #D85F44;
+    border-left:4px solid #D85F44;
+    border-top:4px solid #D85F44;
     background-color:#F6A6A8;
     display: inline-block;
 
@@ -85,11 +85,13 @@ span{
     display: inline-block;
     height: 98%;
     width: 48%;
-    border-right:2px solid #D85F44;
-    border-top:2px solid #D85F44;
+    border-right:4px solid #D85F44;
+    border-top:4px solid #D85F44;
     background-color:#F6A6A8;
 }
 .c{
+    border-right:3px solid #D85F44;
+    border-left:3px solid #D85F44;
     display: flex;
     width: 98%;
     height: 98%;
@@ -404,19 +406,18 @@ span{
     align-items: center;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
-    border: 1px solid white;
-    height: 900px;
+    /*border: 1px solid white;*/
     height: 60%;
-    width: 700px;
     width: 100%;
 }
 .cuerpo_superior{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 98%;
     height: 40%;
-    border: 4px solid #A3525B;
+    border: 4px solid #D85F44;
     border-top-left-radius: 30%;
     border-top-right-radius: 30%;
     border-bottom-left-radius: 12%;
@@ -436,8 +437,8 @@ span{
     width: 48%;
     height: 100%;
     border:2px solid #A46E70;
-    box-shadow: 0px 0px 12px 9px #A46E70;
-    background: linear-gradient(to bottom, #A46E70 ,#F6A6A8 40%);
+    box-shadow: 0px 0px 8px 4px #A46E70;
+    background: linear-gradient(to bottom, #A46E70 ,#F6A6A8 35%);
 }
 .pecho > div:nth-child(1){
     border-bottom-left-radius: 30%;
@@ -457,21 +458,22 @@ span{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow:hidden ;
+    /*overflow:hidden ;*/
     width: 95%;
     height: 60%;
-    border: 4px solid #A3525B;
+    border: 4px solid #D85F44;
     background-color: #F6A6A8 ;
     border-top-left-radius: 18%;
     border-top-right-radius: 18%;
     border-bottom-left-radius: 98%;
     border-bottom-right-radius: 98%;
-    border-top: 0px
+    border-top: 0px;
+    border-bottom: 0px solid transparent;
 }
 .cuadritos{
     height: 50%;
     width: 75%;
-    border:4px solid #A3525B;
+    border:4px solid #D85F44;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
     border-left-color: transparent;
@@ -539,6 +541,7 @@ span{
 
 
 .prenda{
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -547,8 +550,10 @@ span{
     border-top:10px solid white;
     background: linear-gradient(to  bottom left, #D8DE40 35%, #90942A 65% );
     box-shadow:  0px 0px 5px 1px black;
+    border-bottom-left-radius: 98%;
+    border-bottom-right-radius: 98%;
 }
-.prenda > div{
+.prenda > .auxs{
     position: relative;
     box-shadow:  0px 0px 5px 1px black;
     height: 8%;
@@ -559,7 +564,7 @@ span{
     border-bottom-right-radius: 40%;
 }
 
-.prenda > div > div:nth-child(1){
+.auxs > div:nth-child(1){
     position: absolute;
     top:30px;
     transform: rotate(70deg);
@@ -569,7 +574,7 @@ span{
     width: 200%;
     box-shadow:  0px 0px 5px 1px black;
 }
-.prenda > div > div:nth-child(2){
+.auxs > div:nth-child(2){
     position: absolute;
     top:30px;
     right: 3px;
@@ -585,18 +590,66 @@ span{
 
 /*Extremidades*/
 
-.brazoI{
-    height: 300px;
-    width: 600px;
+.brazo1{
+    height: 64%;
+    width: 80%;
+    border: 3px #D85F44 solid;
     background-color: #F6A6A8;
     position:absolute;
-    left:-70%;
     top:56%;
+    left: -68%;
     z-index: -1;
-    transform: rotate(-20deg);
+    transform: rotate(-36deg);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     border-top-right-radius:20%;
+}
 
+.brazo2{
+    height: 64%;
+    width: 80%;
+    border: 3px #D85F44 solid;
+    background-color: #F6A6A8;
+    position:absolute;
+    top:56%;
+    right: -68%;
+    z-index: -1;
+    transform: rotate(36deg);
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius:20%;
 }
     
+.pierna1{
+    z-index: -1;
+    position: absolute;
+    height: 200%;
+    width: 40%;
+    /*border: 3px solid #D85F44;*/
+    left: 0px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.pierna1 > div:nth-child(1), .pierna2 > div:nth-child(1){
+    background-color: #D8DE40;
+    height: 64%;
+    width: 100%;
+}
+.pierna1 > div:nth-child(2), .pierna2 > div:nth-child(2){
+    border: 3px solid #D85F44;
+    height: 36%;
+    border-bottom-left-radius: 60%;
+    border-bottom-right-radius: 60%;
+    background-color: #F6A6A8;
+}
+
+.pierna2{
+    z-index: -1;
+    position: absolute;
+    height: 200%;
+    width: 40%;
+    /*border: 3px solid #D85F44;*/
+    right: 0px;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
